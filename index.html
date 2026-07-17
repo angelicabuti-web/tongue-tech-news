@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Le ultime notizie tecnologiche pubblicate su Hacker News."
+    />
+
+    <title>Tongue Tech News</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="logo" href="/" aria-label="Tongue Tech News">
+          Tongue<span>.</span>
+        </a>
+
+        <p class="header-label">Tech News</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <p class="eyebrow">Informazione semplice e immediata</p>
+
+        <h1>Le ultime notizie dal mondo della tecnologia</h1>
+
+        <p class="hero-description">
+          Scopri gli aggiornamenti più recenti pubblicati su Hacker News.
+        </p>
+      </section>
+
+      <section class="news-section" aria-labelledby="news-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Aggiornamenti</p>
+            <h2 id="news-title">Ultime notizie</h2>
+          </div>
+
+          <p id="news-counter" class="news-counter">0 notizie</p>
+        </div>
+
+        <p id="status-message" class="status-message" aria-live="polite">
+          Caricamento delle notizie...
+        </p>
+
+        <div id="news-list" class="news-list"></div>
+
+        <div class="button-container">
+          <button id="load-more-button" class="load-more-button" type="button">
+            Load more
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Notizie fornite da
+        <a
+          href="https://news.ycombinator.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hacker News
+        </a>
+      </p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
