@@ -6,6 +6,12 @@ Applicazione JavaScript sviluppata per visualizzare le notizie tecnologiche più
 
 Tongue Tech News recupera gli ID delle ultime notizie pubblicate su Hacker News e mostra inizialmente i primi 10 contenuti disponibili.
 
+## Demo online
+
+Puoi provare l’applicazione qui:
+
+https://legendary-fairy-0b5d54.netlify.app/
+
 Ogni notizia presenta:
 
 - titolo;
