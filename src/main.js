@@ -50,10 +50,14 @@ async function loadNextStories() {
       return
     }
 
-    const stories = await Promise.all(
-      nextStoryIds.map((storyId) => getStoryDetails(storyId)),
-    )
+    const results = await Promise.allSettled(
+  nextStoryIds.map((storyId) => getStoryDetails(storyId)),
+)
 
+const stories = results
+  .filter((result) => result.status === 'fulfilled')
+  .map((result) => result.value)
+    
     const validStories = stories.filter(
       (story) =>
         story &&
