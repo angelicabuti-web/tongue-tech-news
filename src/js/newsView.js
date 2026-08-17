@@ -66,6 +66,6 @@ export function hideStatus(statusElement) {
 export function setButtonLoading(button, isLoading) {
   button.disabled = isLoading
   button.textContent = isLoading
-  ? 'Loading...'
-  : 'Load more'
+  ? 'Caricamento...'
+  : 'Carica altre notizie'
 }
